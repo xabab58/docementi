@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<header>
+    <img src="{% static 'main/img/logo.png' %}" width="30" height="30" alt="Лого">
+    <span style="color:red; margin: 0;">НТЦ-1</span>
+
+        <a href="">Командировочный отчет</a>
+        <a href="">Без содержания</a>
+        <a href="">Отпуск</a>
+
+</header>
+
+
+<body>
+
+{% block body %}
+{% endblock %}
+</body>
+</html>
